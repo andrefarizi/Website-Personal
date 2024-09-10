@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background: url(https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.1,gy-0.5,q-75,rh-3264,rw-5824,th-1080,tw-1920/1242071683997892648.jpeg);
+        }
+        label{
+            color:aliceblue;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 20px; 
+            height: 100vh;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: 2px solid #3c04c1;
+            border-radius: 5px; 
+            padding: 20px;
+            width: 300px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        legend {
+            color:rgb(231, 99, 5);
+            padding: 0 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<form action="#">
+    <div class="container">
+    <fieldset>
+        <legend><b>Login</b></legend>
+        <table>
+            <tr>
+                <td><label for="uname">Username</label></td>
+                <td><input type="text" id="uname" name="Username"><br></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" id="pass" name="password"><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<form action="#" >
+    <div class="container">
+    <fieldset>
+    <legend><b>Isi Data Diri</b></legend>
+    <table>
+        <tr>
+            <td><label for="uname">Nama Lengkap</label></td>
+            <td><input type="text" id="uname" name="Username"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="jk">jenis kelamin</label></td>
+        </tr>
+            <td><input type="radio" id="Pria" name="fav_language" value="Pria">
+            <label for="pria">Pria</label><br></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="Pria" name="fav_language" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br></td>
+        </tr>
+        <tr>
+            <td><label>Bidang IT Anda</label></td>
+            <td>
+                <select  name="Bidang" id="Bidang">
+                    <option value="#">--Bidang--</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Game Developer">Game Developer</option>
+                    <option value="IT Support">IT Support</option>
+                </select>
+            </td>
+            <tr>
+                <td><label for="DDA">Deskripsikan diri anda</label><br></td>
+                <td>
+                    <textarea  nama="message" id="DDA" rows="2" cols="15" placeholder="Tulis pesan di sini...">
+                    </textarea><br>
+                </td>
+                <tr>
+                    <td colspan="3"><label>Bahasa Pemrograman yang anda kuasai</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="PHP" name="fav_language" value="PHP">
+                     <label for="PHP">java</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Python" name="Python" value="Python">
+                     <label for="Python">Python</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Scala" name="fav_language" value="Scala">
+                     <label for="Scala">Scala</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="C++" name="C++" value="C++">
+                    <label for="C++">C++</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+                    <label for="Javascript">Javascript</label></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+    </table>
+</fieldset>
+</div>
+</form>
+
+
+</body>
+</html>
